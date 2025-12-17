@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.boxes {
+  background-color: rgb(130, 5, 247);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  height: 100vh;
+}
+
+#box-1,
+#box-d,
+.animate {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid black;
+}
+
+#box-1 {
+  background-color: darkcyan;
+  box-sizing: content-box;
+  display: hidden;
+}
+
+#box-d {
+  background: linear-gradient(maroon, orange);
+  box-sizing: border-box;
+  /* animation-name: caps;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.5s;
+  animation-direction: reverse;*/
+
+  animation: caps 3s timing-function delay infinite reverse fill-mode;
+}
+
+@keyframes caps {
+  /* from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(250px);
+  } */
+
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(250px);
+  }
+  50% {
+    transform: translateY(250px);
+  }
+  75% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#box-d:hover {
+  width: 250px;
+  height: 250px;
+  transform: rotate(180deg);
+  background: linear-gradient(blue, yellow);
+}
+
+.animate {
+  background-color: maroon;
+  height: 200px;
+  width: 200px;
+  animation: changeColor 1.5s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: maroon;
+  }
+  15% {
+    background-color: red;
+  }
+  30% {
+    background-color: yellow;
+  }
+  45% {
+    background-color: orange;
+  }
+  60% {
+    background-color: green;
+  }
+  75% {
+    background-color: indigo;
+  }
+  90% {
+    background-color: violet;
+  }
+}

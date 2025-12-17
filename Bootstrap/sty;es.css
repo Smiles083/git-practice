@@ -1,0 +1,42 @@
+#hero-section{
+    position: relative;
+}
+.carousel-item{
+    background-color: aqua;
+    height: 150vh;
+    position: relative;   
+}
+.carousel-item::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aquamarine;
+    text-align: center;
+    z-index: 250;
+    width: 100%;
+    font-family: fantasy;
+}
+#auto-section{
+    padding: 4rem 0;
+    text-align: center;
+}
+.card img {
+    height: 150px;
+}
+#menu-seection{
+    padding: 4rem 0;
+}

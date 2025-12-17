@@ -1,0 +1,129 @@
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header { 
+    background: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.699)),
+        url(IMAGES/netflix.jpg);
+    min-height: 100vh;
+   
+}
+.head { 
+  padding: 2rem;
+}
+.sign { 
+    height: 48px;
+    width: 314px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+}
+.sin { 
+   height:50px ;
+   width: 314px;
+   background-color: #333333;
+   color: white;
+   border: none;
+   border-radius: 3px;
+}
+.rems { 
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.box-x { 
+  background-color:#00000073; 
+  margin: 50px auto; 
+  padding: 25px; 
+  border-radius: 4px; 
+  text-align: center;  
+  width: 450px;
+  height: 550px;
+}
+.sign-in  {
+    padding-right: 220px;
+}
+.flex { 
+    display: flex;
+}
+.netflix { 
+    display: flex;
+    color: rgba(221, 219, 219, 0.192);
+}
+.netflx { 
+    display: flex;
+    color:rgba(221, 219, 219, 0.192) ;
+    text-align: left;
+}
+
+.btn1 { 
+    width: 94px;
+    height: 36px;
+    position: relative;
+    border: 1px solid #AAAAAA
+}
+.btn1 i { 
+    position: absolute;
+    top:50%;
+    left: 1px;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+.btn1 select { 
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+}
+/* ---------FOOTER----------- */
+.footer { 
+    background: #000000BF;
+    padding: 105px 100px;
+    color: #757575;
+}
+.fg { 
+   color:#757575;
+   display: flex;
+}
+.fg img { 
+  border-radius: 20px;
+}
+.fp { 
+   color:#757575;
+   display: flex;
+}
+.fo { 
+    display: flex;
+}
+.footer-og { 
+  display: flex;
+  justify-content: space-between;
+}
+.footer-op { 
+ display: flex;
+  justify-content: space-between;
+}
+.cof { 
+    color: #757575;
+    display: flex; 
+}
+.blood-s { 
+ display: flex;
+ justify-content: space-between;
+}
+.cop { 
+   color: #757575;
+   display: flex;
+   padding-top: 10px; 
+}
+.sup { 
+    margin-top: 40px;
+     display: flex;
+     justify-content: space-between; 
+}
