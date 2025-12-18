@@ -221,20 +221,109 @@
 // studentReport(76, 98, 78);
 
 // -----------------------String method-----------------------------
-let name = "Achiever is a boss";
+// let name = "Achiever is a boss";
 
-console.log(name.length);
-console.log(name.charAt(12));
-console.log(name.at(2));
+// console.log(name.length);
+// console.log(name.charAt(12));
+// console.log(name.at(2));
 
-console.log(name.concat(" and is the owner of Microsoft and X space"));
+// console.log(name.concat(" and is the owner of Microsoft and X space"));
 
-let text = "Grape, Pomegrante, Cherry";
-console.log(text.slice(7, 17));
-console.log(text.substring(0, 17));
-console.log(name.toUpperCase());
-console.log(name.toLowerCase());
+// let text = "Grape, Pomegrante, Cherry";
+// console.log(text.slice(7, 17));
+// console.log(text.substring(0, 17));
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
 
-// ------------Arrays----------------------
-let student = ["Achiever, Marvellous, Anslem, Emmanuel"];
-let score = [85, 56, 82, 74, "Destiny"];
+// // ------------Arrays----------------------
+// let student = ["Achiever, Marvellous, Anslem, Emmanuel"];
+// let score = [85, 56, 82, 74, "Destiny"];
+
+// // ----------------OBJECTS---------------------
+// let person = {
+//   firstName: "Lyra",
+//   lastName: "Rollins",
+//   age: 21,
+//   gender: "Female",
+//   fullName: function () {
+//     // return this.firstName + this.lastName;
+//      return `${this.firstName} ${this.lastName}`;
+//   },
+//   greeting: function () {
+//     return `Hello, I'm ${this.firstName} ${this.lastName}. I am ${this.age} years old`;
+//   },
+
+//   isMarried: function (newLastName) {
+//     this.lastName = newLastName;
+//   }
+// };
+
+// // console.log(person.name);
+// // // console.log(person.["name"]);
+// // console.log(person.age);
+// // console.log(person.gender);
+
+// // function addNum(l, b) {
+// // //   console.log(l + b);
+// // return l + b;
+// // }
+
+// // // let totalSum = addNum(5, 6);
+
+// // // console.log(totalSum);
+
+// // let perimeter = 2 * addNum(6, 5);
+
+// // console.log(perimeter);
+// console.log(person.fullName());
+// console.log(person.greeting());
+// console.log(person.isMarried("Reigns"));
+// console.log(person.fullName());
+
+
+// ---------------ARRAYS--------------
+//  let students = ["Achiever", "Marvellous", "Anslem", "Emmanuel"];
+//  let scores = [85, 56, 82, 74, "Destiny"];
+ 
+//  console.log(students[0]);
+
+//  console.log(students.pop());
+//  console.log(students);
+//  console.log(students.push("Eli"));
+//  console.log(students);
+
+//  console.log(students.shift());
+//  console.log(students);
+//  console.log(students.unshift("Micheal"));
+//  console.log(students);
+
+//  console.log(students.indexOf("Marvellous"));
+
+//  console.log(students.concat(["Achiever","Emmanuel"]));
+
+//  console.log(students);
+
+//  students.slice(2, 0, ["Emeka", "James"]);
+//  console.log(students);
+
+
+//  -----------------Todo application------------------------
+let todos = ["Wake up", "Disturb my Siblings", "Visit my neighbours daughter alone"];
+const addTodo = function () {
+    const newTodo = prompt("Add a new Todo list");
+    todos.push(newTodo);
+    console.log(todos);
+};
+
+// addTodo();
+
+const deleteTodo = function () {
+    const todoDelete = prompt("What do you want to delete");
+    let indexTodo = todos.indexOf(todoDelete);
+    todos.splice(indexTodo, 1);
+    console.log(todos);
+};
+
+deleteTodo();
+// todos.splice = (1, 0);
+// console.log(todos);

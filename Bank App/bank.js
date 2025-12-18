@@ -1,5 +1,5 @@
 console.log("Welcome to Mini Bank App");
- alert(" Hello! This is a world of financial expertise")
+alert(" Hello! This is a world of financial expertise");
 function bankApp(balance) {
   const option = Number(
     prompt(
@@ -20,7 +20,9 @@ function bankApp(balance) {
         console.log("Insufficient funds");
       } else {
         balance -= withdrawAmt;
-        console.log(`Withdrawal successful. New balance: $${balance.toFixed(2)}`);
+        console.log(
+          `Withdrawal successful. New balance: $${balance.toFixed(2)}`
+        );
       }
       break;
 
@@ -45,5 +47,5 @@ function bankApp(balance) {
   // return balance;
 }
 
-// 
+//
 bankApp(1000000000);
